@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="">
 
-      <div className="text-3xl font-bold underline">Nguyen Thi Quynh huong 1234</div>
+      <div className="text-3xl font-bold underline">Nguyen Thi Quynh huong</div>
 
     </div>
   );
