@@ -4,7 +4,7 @@ const App = () => {
 
   return (
     <div className="">
-      <div className="text-3xl font-bold underline">test merge branch main to giapchicuong</div>
+      <div className="text-3xl font-bold underline">test merge branch main to</div>
     </div>
   );
 };
