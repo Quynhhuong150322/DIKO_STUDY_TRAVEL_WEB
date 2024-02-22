@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className="flex gap-3 ">
                     <img src={Logo} alt="" />
                     <FaRegQuestionCircle />
-                    <img src={EL} alt="" className='w-7 h-7' />
+                    <img src={EL} alt="" className='w-6 h-6' />
                 </div>
                 {/* Upper Nav  */}
                 <div className=''>
