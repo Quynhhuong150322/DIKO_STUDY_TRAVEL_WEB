@@ -34,7 +34,7 @@ const MenuData = [
 const Navbar = () => {
     return (
         <div className='bg-neutral py-[24px]'>
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-row gap-10">
                 {/* Header Section  */}
                 <div className='flex gap-2 items-center'>
                     <img src={Logo} alt="" />
@@ -46,7 +46,7 @@ const Navbar = () => {
                             <div className="flex items-center">
                                 <input type="text"
                                     placeholder="search"
-                                    className="w-[605px] h-[32px] group-hover:w-[300px] rounded-sm border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary "
+                                    className="w-[605px] h-[32px] group-hover:w-[300px] rounded-sm border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary"
                                 />
                                 <LuSearch className="text-gray-500 group-hover:text-primary  -translate-y-1/2 right-3" />
                             </div>

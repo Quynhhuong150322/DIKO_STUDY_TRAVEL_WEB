@@ -7,34 +7,14 @@ import { LuSearch } from "react-icons/lu";
 const MenuData = [
     {
         id: 1,
-        name: 'Trip',
-    },
-    {
-        id: 2,
-        name: '%Deals',
-    },
-    {
-        id: 3,
-        name: 'Hotel',
-    },
-    {
-        id: 4,
-        name: 'Flight',
-    },
-    {
-        id: 5,
-        name: 'Apartment',
-    },
-    {
-        id: 6,
-        name: 'Camper',
-    },
+        name: Trip
+    }
 ]
 
 const Navbar = () => {
     return (
         <div className='bg-neutral py-[24px]'>
-            <div className="flex flex-col gap-10">
+            <div className="">
                 {/* Header Section  */}
                 <div className='flex gap-2 items-center'>
                     <img src={Logo} alt="" />
@@ -46,7 +26,7 @@ const Navbar = () => {
                             <div className="flex items-center">
                                 <input type="text"
                                     placeholder="search"
-                                    className="w-[605px] h-[32px] group-hover:w-[300px] rounded-sm border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary "
+                                    className="w-[605px] h-[32px] group-hover:w-[300px] rounded-sm border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:bg-gray-500 dark:bg-gray-800"
                                 />
                                 <LuSearch className="text-gray-500 group-hover:text-primary  -translate-y-1/2 right-3" />
                             </div>
@@ -64,18 +44,8 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* Upper Nav  */}
-                <div className=''>
-                    <div className=' '>
-                        <ul className='flex justify-center gap-4'>
-                            {
-                                MenuData.map((data) => (
-                                    <button key={data.id} className='text-pri tabMenu focus:bg-primary focus:text-white focus:font-bold focus:border-primary inline-block hover:text-primary' >
-                                        {data.name}
-                                    </button>
-                                ))
-                            }
-                        </ul>
-                    </div>
+                <div className='py-10'>
+
                 </div>
             </div>
         </div>

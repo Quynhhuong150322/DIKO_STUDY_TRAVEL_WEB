@@ -13,7 +13,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #F9F9F9;
   }
 }
 
@@ -38,11 +37,6 @@
   .tabMenu {
     width: 121px;
     height: 40px;
-    color: #D9D9D9;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #D9D9D9;
-    color: #D9D9D9;
-    border-radius: 9999px;
+    
   }
 }

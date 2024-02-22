@@ -46,9 +46,9 @@ const Navbar = () => {
                             <div className="flex items-center">
                                 <input type="text"
                                     placeholder="search"
-                                    className="w-[605px] h-[32px] group-hover:w-[300px] rounded-sm border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary "
+                                    className="w-[605px] h-[32px] group-hover:w-[300px] rounded-sm border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary absolute z-2"
                                 />
-                                <LuSearch className="text-gray-500 group-hover:text-primary  -translate-y-1/2 right-3" />
+                                <LuSearch className="text-gray-500 group-hover:text-primary  -translate-y-1/2 right-3 absolute z-3" />
                             </div>
                         </div>
                         <div className='flex gap-2 items-center'>
