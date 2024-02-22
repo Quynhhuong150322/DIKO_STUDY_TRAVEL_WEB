@@ -5,10 +5,10 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <div className='bg-neutral '>
-            <div className="px-[108px] py-[24px]">
+        <div>
+            <div className="flex gap 3">
                 {/* Header Section  */}
-                <div className="flex gap-3 ">
+                <div className="">
                     <img src={Logo} alt="" />
                     <FaRegQuestionCircle />
                     <img src={EL} alt="" />
