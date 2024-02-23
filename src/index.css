@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
   }
   * {
     margin: 0;
@@ -18,7 +18,7 @@
 
 @layer components {
   .max-container {
-    max-width: 1440px;
+    max-width: 1260px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 30px;

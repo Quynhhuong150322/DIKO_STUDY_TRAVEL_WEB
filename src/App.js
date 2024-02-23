@@ -15,7 +15,7 @@ const App = () => {
           <AppRoutes />
         </div>
         <div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </Router>
