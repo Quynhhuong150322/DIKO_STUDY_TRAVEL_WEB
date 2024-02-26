@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+  let location = useLocation();
+  if ((location.pathname !== "/login") & (location.pathname !== "/register")) {
+    return <div>Footer</div>;
+  }
+};
 
-export default Footer
+export default Footer;

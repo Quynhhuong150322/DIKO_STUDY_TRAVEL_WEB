@@ -2,7 +2,8 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Login from "../components/Login";
 import Register from "../components/Register";
-import Langding from "../pages/LangdingPage/Langding";
+import Error from "../components/Error";
+import Home from "../pages/Home/Home";
 const AppRoutes = () => {
   return (
     <div>
@@ -14,10 +15,10 @@ const AppRoutes = () => {
           <Register />
         </Route>
         <Route path="/" exact>
-          <Langding />
+          <Home />
         </Route>
         <Route path="*">
-          <div className="">404 not Error...</div>
+          <Error />
         </Route>
       </Switch>
     </div>

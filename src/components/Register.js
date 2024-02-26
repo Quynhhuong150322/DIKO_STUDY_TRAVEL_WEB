@@ -97,7 +97,7 @@ const Register = () => {
   };
 
   return (
-    <section className="w-[1060px] h-[713px] mx-auto border rounded-2xl ">
+    <section className="w-[1060px] h-[713px] mx-auto border rounded-2xl  mt-16">
       <div className="p-5 md:p-10 flex flex-1 justify-center gap-10">
         <div className="w-[416px] h-[609px] hidden lg:flex flex-1 flex-shrink-0">
           <img src={loginImg} alt="Login" />
