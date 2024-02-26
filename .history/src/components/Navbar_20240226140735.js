@@ -3,8 +3,34 @@ import Logo from '../assets/images/Header/Logo.png'
 import EL from '../assets/images/Header/England.png'
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { LuSearch } from "react-icons/lu";
-import { MenuData } from "../dummyData"
+import { MenuData } from "."
 
+const MenuData = [
+    {
+        id: 1,
+        name: 'Trip',
+    },
+    {
+        id: 2,
+        name: '%Deals',
+    },
+    {
+        id: 3,
+        name: 'Hotel',
+    },
+    {
+        id: 4,
+        name: 'Flight',
+    },
+    {
+        id: 5,
+        name: 'Apartment',
+    },
+    {
+        id: 6,
+        name: 'Camper',
+    },
+]
 
 const Navbar = () => {
     return (

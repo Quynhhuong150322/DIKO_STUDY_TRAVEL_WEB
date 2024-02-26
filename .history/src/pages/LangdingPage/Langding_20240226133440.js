@@ -4,9 +4,17 @@ import { LuHotel } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { SlArrowDown } from "react-icons/sl";
 import { FiUserPlus } from "react-icons/fi";
+import Img1 from "../../assets/images/LangdingPage/SpecialOffers/Photo 1.png";
+import Img2 from "../../assets/images/LangdingPage/SpecialOffers/Photo 2.png"
+import Img3 from "../../assets/images/LangdingPage/SpecialOffers/Photo 3.png"
+import Img4 from "../../assets/images/LangdingPage/SpecialOffers/Photo 4.png"
+import Img5 from "../../assets/images/LangdingPage/SpecialOffers/Photo 5.png"
+import Img6 from "../../assets/images/LangdingPage/SpecialOffers/Photo 6.png"
+import Img7 from "../../assets/images/LangdingPage/ExploreStays/Image1.jpg"
+import Img8 from "../../assets/images/LangdingPage/ExploreStays/Image2.jpg"
+import Img9 from "../../assets/images/LangdingPage/ExploreStays/Image3.jpg"
 import Footer from "../../assets/images/LangdingPage/Footer.jpeg"
 // import Img11 from "../../assets/images/LangdingPage/SpecialOffers/Photo 6.png"
-import { ListMenu, ListImage, ListCard } from '../../dummyData';
 
 
 
@@ -26,7 +34,160 @@ const FooterImg = {
   height: "394px",
   width: "100%",
 }
+const ListMenu = [
+  {
+    id: 1,
+    name: "All",
+  },
+  {
+    id: 2,
+    name: "Hotels",
+  },
+  {
+    id: 3,
+    name: "Flights",
+  },
+  {
+    id: 4,
+    name: "Multi",
+  }
+]
 
+const ListImage = [
+  {
+    id: 1,
+    img: Img1,
+  },
+  {
+    id: 2,
+    img: Img2,
+  },
+  {
+    id: 3,
+    img: Img3,
+  },
+  {
+    id: 4,
+    img: Img4,
+  },
+  {
+    id: 5,
+    img: Img5,
+  },
+  {
+    id: 6,
+    img: Img6,
+  },
+]
+const ListCard = [
+  {
+    id: 1,
+    img: Img1,
+    location: "Berlin",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+  },
+  {
+    id: 2,
+    img: Img2,
+    location: "Paris",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 3,
+    img: Img3,
+    location: "Madrid",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 4,
+    img: Img4,
+    location: "Barcelona",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 5,
+    img: Img5,
+    location: "Rom",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 6,
+    img: Img6,
+    location: "Milan",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 7,
+    img: Img7,
+    location: "Istanbul",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 8,
+    img: Img8,
+    location: "Dubai",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 9,
+    img: Img9,
+    location: "Amesterdam",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 10,
+    img: Img1,
+    location: "New York",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 11,
+    img: Img2,
+    location: "Marollca",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+  {
+    id: 12,
+    img: Img3,
+    location: "Teneriffa",
+    side: "SIDE",
+    time: "Wed 25 Jan-Fri 27 Jan",
+    title: "A tour of the city and its surroundings led by a professional guide ..."
+
+  },
+]
 
 const Langding = () => {
   return (
@@ -160,8 +321,8 @@ const Langding = () => {
             <h1 className='text-3xl'>Get Inspirations For Your Next Trip</h1>
             <p className='text-xl'>Read About Wonderful Adventure We Love Most</p>
           </div>
-          <div className=' text-white px-20 text-right '>
-            <h1 className='font-bold text-3xl '>Difficult Roads Lead To Beautiful Destination .</h1>
+          <div className='flex text-white px-20 text-right '>
+            <h1 className='font-bold text-3xl basis-3/4'>Difficult Roads Lead To Beautiful Destination .</h1>
             <p className='text-x'>Read More</p>
           </div>
         </div>

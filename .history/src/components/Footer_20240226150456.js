@@ -46,13 +46,91 @@ const Footer = ({ Links, title }) => {
       </div>
       <div className='py-11 flex flex-col  gap-16'>
         {/* footer menu  */}
-        <div className='grid grid-cols-6 sm:grid-col col-span-2 md:pl-10'>
-          <MenuFooterList Name={MenuList} title="About Us" />
-          <MenuFooterList Name={AboutUsList} title="We Offer" />
-          <MenuFooterList Name={WeOfferList} title="Headquarters" />
-          <MenuFooterList Name={HeadquartersList} title="Travel Blogs" />
-          <MenuFooterList Name={ActivitiesList} title="Activities" />
-          <MenuFooterList Name={ServiceList} title="Service" />
+        <div className=''>
+          <div className="py-8 px-4">
+            <MenuFooterList Name={MenuList} title="About Us" />
+            <MenuFooterList Name={AboutUsList} title="We Offer" />
+            <MenuFooterList Name={WeOfferList} title="Headquarters" />
+            <MenuFooterList Name={HeadquartersList} title="Travel Blogs" />
+            <MenuFooterList Name={ActivitiesList} title="About Us" />
+            <MenuFooterList Name={ServiceList} title="About Us" />
+
+          </div>
+          {/* <div className="py-8 px-4">
+            <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+              We Offer
+            </h1>
+            <ul className="flex flex-col gap-3">
+              {AboutUsList.map((link) => (
+                <li
+                  className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 "
+                  key={link.id}
+                >
+                  <span>{link.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="py-8 px-4">
+            <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+              Headquarters
+            </h1>
+            <ul className="flex flex-col gap-3">
+              {AboutUsList.map((link) => (
+                <li
+                  className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 "
+                  key={link.id}
+                >
+                  <span>{link.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="py-8 px-4">
+            <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+              Travel Blogs
+            </h1>
+            <ul className="flex flex-col gap-3">
+              {AboutUsList.map((link) => (
+                <li
+                  className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 "
+                  key={link.id}
+                >
+                  <span>{link.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="py-8 px-4">
+            <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+              Activities
+            </h1>
+            <ul className="flex flex-col gap-3">
+              {AboutUsList.map((link) => (
+                <li
+                  className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 "
+                  key={link.id}
+                >
+                  <span>{link.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="py-8 px-4">
+            <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+              Service
+            </h1>
+            <ul className="flex flex-col gap-3">
+              {AboutUsList.map((link) => (
+                <li
+                  className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 "
+                  key={link.id}
+                >
+                  <span>{link.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div> */}
         </div>
         {/* footer logo  */}
         <div>
