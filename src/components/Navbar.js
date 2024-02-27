@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom/cjs/react-router-dom.min";
+
 const Navbar = () => {
   let location = useLocation();
   if (location.pathname === "/login" || location.pathname === "/register") {

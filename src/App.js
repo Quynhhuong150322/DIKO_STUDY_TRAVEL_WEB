@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AppRoutes from "./routes/AppRoutes";
 import { BrowserRouter as Router } from "react-router-dom";
+import CopyRight from "./components/CopyRight";
 
 const App = () => {
   return (
@@ -16,7 +17,12 @@ const App = () => {
         <div className="layout">
           <AppRoutes />
         </div>
-        <div className="max-container"><Footer /></div>
+        <div className="">
+          <Footer />
+        </div>
+        <div >
+          <CopyRight />
+        </div>
       </div>
     </Router>
   );
