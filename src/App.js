@@ -14,13 +14,13 @@ const App = () => {
             <Navbar />
           </div>
         </div>
-        <div className="layout">
+        <div className="">
           <AppRoutes />
         </div>
         <div className="">
           <Footer />
         </div>
-        <div >
+        <div>
           <CopyRight />
         </div>
       </div>
