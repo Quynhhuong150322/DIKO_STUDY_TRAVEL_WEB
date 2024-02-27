@@ -4,7 +4,6 @@ import EL from '../assets/images/Header/England.png'
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { LuSearch } from "react-icons/lu";
 import { MenuData } from "../dummyData";
-import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -13,9 +12,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-10">
                 {/* Header Section  */}
                 <div className='flex gap-2 items-center'>
-                    <Link to='/home'>
-                        <img link='./login' src={Logo} alt="" />
-                    </Link>
+                    <img link='./login' src={Logo} alt="" />
                     <div className='flex gap-7 items-center'>
                         <div className="flex gap-1 items-center">
                             <FaRegQuestionCircle className='text-primary' />
@@ -32,10 +29,10 @@ const Navbar = () => {
                         </div>
                         <div className='flex gap-2 items-center'>
                             <button className='button border-primary bg-neutral hover:scale-105 py-2 px-4 rounded-sm' >
-                                <Link to='/login'>Sing In</Link>
+                                Sing In
                             </button>
                             <button className='button border-primary bg-neutral hover:scale-105 py-2 px-4 rounded-sm'>
-                                <Link to='/register'>Register</Link>
+                                Register
                             </button>
                         </div>
                     </div>

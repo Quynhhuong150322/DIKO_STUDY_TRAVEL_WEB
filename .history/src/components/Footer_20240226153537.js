@@ -24,7 +24,7 @@ const Footer = ({ Links, title }) => {
           <div className='flex flex-col gap-6'>
             {AppList.map((data) => (
               <div className='flex flex-row gap-6'>
-                <div key={data.id} className='flex flex-row basis-5/6 gap-2 items-center justify-center text-white bg-black rounded-lg p-1'>
+                <div className='flex flex-row basis-5/6 gap-2 items-center justify-center text-white bg-black rounded-lg p-1'>
                   <data.icon className='text-2xl' />
                   <div className='text-sm'>
                     <p>{data.title1} </p>
@@ -56,7 +56,7 @@ const Footer = ({ Links, title }) => {
             <div className='flex gap-4 items-center '>
               {
                 ImgList.map((data) => (
-                  <div key={data.id} className='border rounded-sm border-gray-300 w-[89.25px] h-[48px] flex justify-center items-center'>
+                  <div className='border rounded-sm border-gray-300 w-[89.25px] h-[48px] flex justify-center items-center'>
                     <img src={data.img} alt=""></img>
                   </div>
                 ))

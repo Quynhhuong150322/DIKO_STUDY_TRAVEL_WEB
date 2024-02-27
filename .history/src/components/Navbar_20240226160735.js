@@ -13,9 +13,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-10">
                 {/* Header Section  */}
                 <div className='flex gap-2 items-center'>
-                    <Link to='/home'>
-                        <img link='./login' src={Logo} alt="" />
-                    </Link>
+                    <img link='./login' src={Logo} alt="" />
                     <div className='flex gap-7 items-center'>
                         <div className="flex gap-1 items-center">
                             <FaRegQuestionCircle className='text-primary' />
@@ -35,7 +33,7 @@ const Navbar = () => {
                                 <Link to='/login'>Sing In</Link>
                             </button>
                             <button className='button border-primary bg-neutral hover:scale-105 py-2 px-4 rounded-sm'>
-                                <Link to='/register'>Register</Link>
+                                Register
                             </button>
                         </div>
                     </div>
