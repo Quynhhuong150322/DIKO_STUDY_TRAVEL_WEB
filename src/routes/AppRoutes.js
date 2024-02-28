@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import Error from "../components/Error";
-import Home from "../pages/Home/Home";
+import Home from "../pages/home/Home";
 const AppRoutes = () => {
   return (
     <div>
