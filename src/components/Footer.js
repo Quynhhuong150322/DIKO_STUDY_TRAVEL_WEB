@@ -1,48 +1,27 @@
-import React from 'react'
-import { MenuList, AboutUsList, WeOfferList, HeadquartersList, ActivitiesList, ServiceList, ImgList, IconsList, AppList } from '../dummyData'
-import MenuFooterList from './MenuFooterItem';
-// import { CiMail } from "react-icons/ci";
+import React from "react";
+import {
+  MenuList,
+  AboutUsList,
+  WeOfferList,
+  HeadquartersList,
+  ActivitiesList,
+  ServiceList,
+  ImgList,
+  IconsList,
+  AppList,
+} from "../dummyData";
+import MenuFooterList from "./MenuFooterItem";
+import { FaStarOfDavid } from "react-icons/fa";
 
 const Footer = ({ Links, title }) => {
   return (
-    <div className=''>
-      {/* Go Further With The EasySet24 App */}
-      <div className='flex items-center justify-between py-7'>
-        <div className='basis-7/12 flex flex-col gap-1'>
-          <h2 className='font-bold text-primary text-xl'>
-            Go Further With The EasySet24 App
-          </h2>
-          <p className='text-ba '>
-            Enjoy savings on chosen hotels and flights when you book through the EasySet24 website. Additionally, earn One Key Cash for every booking made through the app.
-          </p>
-          <p className='text-ba text-black/50'>
-            Secured By Europe GTP
-          </p>
-        </div>
-        {/* APP  */}
-        <div className=''>
-          <div className='flex flex-col gap-6'>
-            {AppList.map((data) => (
-              <div className='flex flex-row gap-6'>
-                <div key={data.id} className='flex flex-row basis-5/6 gap-2 items-center justify-center text-white bg-black rounded-lg p-1'>
-                  <data.icon className='text-2xl' />
-                  <div className='text-sm'>
-                    <p>{data.title1} </p>
-                    <p className='text-ba font-bold'>{data.title2}</p>
-                  </div>
-                </div>
-                <img src={data.QR} alt="" className=''></img>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className=''>
+    <div className="">
+      <div className="">
         <hr class="w-full h-px  bg-gray-300 border-0 dark:bg-gray-700"></hr>
       </div>
-      <div className='py-11 flex flex-col  gap-16'>
+      <div className="max-container py-11 flex flex-col  gap-16">
         {/* footer menu  */}
-        <div className='grid grid-cols-6 sm:grid-col col-span-2 md:pl-10'>
+        <div className="grid grid-cols-6 sm:grid-col col-span-2 md:pl-10">
           <MenuFooterList Name={MenuList} title="About Us" />
           <MenuFooterList Name={AboutUsList} title="We Offer" />
           <MenuFooterList Name={WeOfferList} title="Headquarters" />
@@ -62,22 +41,22 @@ const Footer = ({ Links, title }) => {
                 ))
               }
             </div>
-            <div className='text-primary flex gap-6 text-xxl items-center justify-center' >
+            <div className="text-primary flex gap-6 text-xxl items-center justify-center">
               {IconsList.map((data) => (
                 <div key={data.id}>
                   <data.icon />
                 </div>
               ))}
             </div>
-            <div className='flex flex-col gap-1'>
-              <h3 className='font-bold '>Email</h3>
-              <div className='flex '>
+            <div className="flex flex-col gap-1">
+              <h3 className="font-bold ">Email</h3>
+              <div className="flex ">
                 <input
                   type="text"
                   placeholder="Enter your email"
                   className="basis-10/12 h-[32px] rounded-sm border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary"
                 />
-                <button className='basis-1/4 h-[32px] button border-primary py-1 px-4 rounded-sm bg-primary text-white'>
+                <button className="basis-1/4 h-[32px] button border-primary py-1 px-4 rounded-sm bg-primary text-white">
                   Subscribe
                 </button>
               </div>
@@ -86,7 +65,7 @@ const Footer = ({ Links, title }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

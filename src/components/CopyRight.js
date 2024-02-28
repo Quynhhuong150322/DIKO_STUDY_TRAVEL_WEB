@@ -1,23 +1,21 @@
-import React from 'react'
-import { CopyrightList } from '../dummyData'
-
-
-
+import React from "react";
+import { CopyrightList } from "../dummyData";
 const CopyRight = () => {
-    return (
-        <div>
-            <div className='bg-gray-300 py-5 px-[250px]'>
-                <div className='text-black flex gap-2 text-sm items-center justify-between' >
-                    {CopyrightList.map((data) => (
-                        <div className='flex flex-row gap-2 items-center justify-center' key={data.id}>
-                            <img src={data.icons} alt="" />
-                            <p >{data.title}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="bg-gray-300 h-16 ">
+      <div className="max-container text-black flex gap-2 items-center justify-between text-sm bg-transparent ">
+        {CopyrightList.map((data) => (
+          <div
+            className="flex gap-2 items-center justify-center bg-transparent mt-6"
+            key={data.id}
+          >
+            <img src={data.icons} alt="" className="bg-transparent" />
+            <p className="bg-transparent">{data.title}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default CopyRight
+export default CopyRight;

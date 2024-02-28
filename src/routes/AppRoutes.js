@@ -2,8 +2,8 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Login from "../components/Login";
 import Register from "../components/Register";
-import Home from "../pages/home/Home";
-// import Home from "../pages/home/Home"
+import Error from "../components/Error";
+import Home from "../pages/Home/Home";
 const AppRoutes = () => {
   return (
     <div>
@@ -14,14 +14,11 @@ const AppRoutes = () => {
         <Route path="/register">
           <Register />
         </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/home" exact>
+        <Route path="/" exact>
           <Home />
         </Route>
         <Route path="*">
-          <div className="">404 not Error...</div>
+          <Error />
         </Route>
       </Switch>
     </div>

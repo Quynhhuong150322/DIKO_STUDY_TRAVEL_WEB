@@ -8,17 +8,19 @@ import CopyRight from "./components/CopyRight";
 const App = () => {
   return (
     <Router>
-      <div className="">
-        <div className="max-container">
-          <Navbar />
+      <div>
+        <div className="border-b border-[#A6A6A6]">
+          <div className="max-container">
+            <Navbar />
+          </div>
         </div>
-        <div>
+        <div className="">
           <AppRoutes />
         </div>
-        <div className="max-container">
+        <div className="">
           <Footer />
         </div>
-        <div >
+        <div>
           <CopyRight />
         </div>
       </div>
