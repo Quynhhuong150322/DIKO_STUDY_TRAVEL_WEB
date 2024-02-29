@@ -8,6 +8,7 @@ import { FaRegEye } from "react-icons/fa";
 import { PiWarningCircleLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import { loginUser } from "../services/authServices";
 const Login = () => {
   let history = useHistory();
   const defaultValue = {
@@ -55,11 +56,15 @@ const Login = () => {
     return true;
   };
 
-  const handleLogin = () => {
+  const handleLogin = async() => {
     const check = checkValidInputs();
     if (check) {
+      // console.log(loginInput);
+      // history.push("/");
       console.log(loginInput);
-      history.push("/");
+      const res = await loginUser(loginInput);
+      console.log(res)
+      history.push('/login');
     }
   };
 

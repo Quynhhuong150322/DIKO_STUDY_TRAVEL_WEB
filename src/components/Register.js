@@ -8,18 +8,19 @@ import { FaRegEye } from 'react-icons/fa';
 import { PiWarningCircleLight } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import { registerNewUser } from '../services/authServices';
 const Register = () => {
     let history = useHistory();
     const defaultValue = {
-        firstName: '',
-        lastName: '',
+        firstname: '',
+        lastname: '',
         email: '',
         password: '',
         confirmPassword: '',
     };
     const defaultValidInput = {
-        firstName: true,
-        lastName: true,
+        firstname: true,
+        lastname: true,
         email: true,
         password: true,
         confirmPassword: true,
@@ -32,14 +33,14 @@ const Register = () => {
 
     const checkValidInputs = () => {
         setObjCheckInput(defaultValidInput);
-        if (!registerInput.firstName) {
+        if (!registerInput.firstname) {
             setTextValid('First Name is required');
-            setObjCheckInput({ ...defaultValidInput, firstName: false });
+            setObjCheckInput({ ...defaultValidInput, firstname: false });
             return false;
         }
-        if (!registerInput.lastName) {
+        if (!registerInput.lastname) {
             setTextValid('Last Name is required');
-            setObjCheckInput({ ...defaultValidInput, lastName: false });
+            setObjCheckInput({ ...defaultValidInput, lastname: false });
             return false;
         }
         if (!registerInput.email) {
@@ -86,10 +87,12 @@ const Register = () => {
         return true;
     };
 
-    const handleLogin = () => {
+    const handleRegister = async () => {
         const check = checkValidInputs();
         if (check) {
             console.log(registerInput);
+            const res = await registerNewUser(registerInput);
+            console.log(res);
             history.push('/login');
         }
     };
@@ -108,9 +111,9 @@ const Register = () => {
                             <div className="flex gap-10">
                                 <div className="flex flex-col flex-1 gap-1">
                                     <label
-                                        htmlFor="firstName"
+                                        htmlFor="firstname"
                                         className={
-                                            objCheckInput.firstName
+                                            objCheckInput.firstname
                                                 ? 'text-sm font-normal cursor-pointer'
                                                 : 'text-sm font-normal cursor-pointer text-red-600'
                                         }
@@ -120,25 +123,25 @@ const Register = () => {
                                     <div className="flex items-center">
                                         <input
                                             type="text"
-                                            name="firstName"
-                                            id="firstName"
-                                            value={registerInput.firstName}
+                                            name="firstname"
+                                            id="firstname"
+                                            value={registerInput.firstname}
                                             onChange={(e) =>
                                                 setRegisterInput({
                                                     ...registerInput,
-                                                    firstName: e.target.value,
+                                                    firstname: e.target.value,
                                                 })
                                             }
                                             placeholder="EasySet24"
                                             className={
-                                                objCheckInput.firstName
+                                                objCheckInput.firstname
                                                     ? ' w-[170px] h-[48px] p-3 border rounded text-xs font-normal'
                                                     : ' w-[170px] h-[48px] p-3 border rounded text-xs font-normal border-red-600'
                                             }
                                         />
                                         <div
                                             className={
-                                                objCheckInput.firstName
+                                                objCheckInput.firstname
                                                     ? 'cursor-pointer text-red-600 text-2xl hidden'
                                                     : 'cursor-pointer text-red-600 text-2xl '
                                             }
@@ -148,15 +151,15 @@ const Register = () => {
                                     </div>
                                     <div className="">
                                         <span className="absolute text-[10px] font-semibold text-red-600 ">
-                                            {objCheckInput.firstName ? '' : textValid}
+                                            {objCheckInput.firstname ? '' : textValid}
                                         </span>
                                     </div>
                                 </div>
                                 <div className="flex  flex-col flex-1 gap-1">
                                     <label
-                                        htmlFor="lastName"
+                                        htmlFor="lastname"
                                         className={
-                                            objCheckInput.lastName
+                                            objCheckInput.lastname
                                                 ? 'text-sm font-normal cursor-pointer'
                                                 : 'text-sm font-normal cursor-pointer text-red-600'
                                         }
@@ -166,25 +169,25 @@ const Register = () => {
                                     <div className="flex items-center">
                                         <input
                                             type="text"
-                                            name="lastName"
-                                            id="lastName"
-                                            value={registerInput.lastName}
+                                            name="lastname"
+                                            id="lastname"
+                                            value={registerInput.lastname}
                                             onChange={(e) =>
                                                 setRegisterInput({
                                                     ...registerInput,
-                                                    lastName: e.target.value,
+                                                    lastname: e.target.value,
                                                 })
                                             }
                                             placeholder="EasySet24"
                                             className={
-                                                objCheckInput.lastName
+                                                objCheckInput.lastname
                                                     ? 'w-[170px] h-[48px] p-3 border rounded text-xs font-normal'
                                                     : 'w-[170px] h-[48px] p-3 border rounded text-xs font-normal border-red-600'
                                             }
                                         />
                                         <div
                                             className={
-                                                objCheckInput.lastName
+                                                objCheckInput.lastname
                                                     ? 'cursor-pointer text-red-600 text-2xl hidden'
                                                     : 'cursor-pointer text-red-600 text-2xl '
                                             }
@@ -194,7 +197,7 @@ const Register = () => {
                                     </div>
                                     <div className="">
                                         <span className="absolute text-[10px] font-semibold text-red-600 ">
-                                            {objCheckInput.lastName ? '' : textValid}
+                                            {objCheckInput.lastname ? '' : textValid}
                                         </span>
                                     </div>
                                 </div>
@@ -373,7 +376,7 @@ const Register = () => {
                             </div>
                             <div
                                 className="flex-1 max-h-[48px]  bg-[#07689F] text-center rounded border px-2 py-3 hover:bg-gray-500 cursor-pointer"
-                                onClick={() => handleLogin()}
+                                onClick={() => handleRegister()}
                             >
                                 <input
                                     className="text-base font-medium text-white cursor-pointer  "
