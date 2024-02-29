@@ -123,7 +123,7 @@ const Home = () => {
       <div className="max-container py-20">
         <div className="flex flex-col gap-4 py-6">
           <h2 className="text-2xl font-bold">
-            Compare The Highest Reviewed Past Offers{" "}
+            Compare The Highest Reviewed Past Offers
           </h2>
           <p>Browse By Type</p>
         </div>
