@@ -4,7 +4,8 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import Error from "../components/Error";
 import Home from "../pages/Home/Home";
-const AppRoutes = () => {
+import AboutUs from "../pages/AboutUs/AboutUs";
+function AppRoutes() {
   return (
     <div>
       <Switch>
@@ -17,12 +18,15 @@ const AppRoutes = () => {
         <Route path="/" exact>
           <Home />
         </Route>
+        <Route path="/AboutUs" exact>
+          <AboutUs />
+        </Route>
         <Route path="*">
           <Error />
         </Route>
       </Switch>
     </div>
   );
-};
+}
 
 export default AppRoutes;

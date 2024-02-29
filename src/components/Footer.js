@@ -15,7 +15,46 @@ import { FaStarOfDavid } from "react-icons/fa";
 
 const Footer = ({ Links, title }) => {
   return (
-    <div className="">
+    <div className="pt-5">
+      {/* Go Further With The EasySet24 App */}
+      <div className="max-container flex items-center justify-between py-10">
+        <div className="basis-7/12 flex flex-col gap-1">
+          <h2 className="font-bold text-primary text-xl">
+            Go Further With The EasySet24 App
+          </h2>
+          <p className="text-ba ">
+            Enjoy savings on chosen hotels and flights when you book through the
+            EasySet24 website. Additionally, earn One Key Cash for every booking
+            made through the app.
+          </p>
+          <p className="text-ba text-black/50">Secured By Europe GTP</p>
+        </div>
+        {/* APP  */}
+        <div className="">
+          <div className="flex flex-col gap-6">
+            {AppList.map((data) => (
+              <div className="flex flex-row gap-6 bg-transparent">
+                <div className="flex flex-row basis-5/6 gap-2 items-center justify-center text-white bg-black rounded-lg p-1">
+                  <data.icon className="text-2xl bg-transparent" />
+                  <div className="text-sm bg-transparent flex justify-center items-center flex-col">
+                    <div className="bg-transparent flex justify-center py-1">
+                      {data.title1}
+                    </div>
+                    <p className="text-ba font-bold bg-transparent">
+                      {data.title2}
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src={data.QR}
+                  alt=""
+                  className="bg-transparent object-contain"
+                ></img>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="">
         <hr class="w-full h-px  bg-gray-300 border-0 dark:bg-gray-700"></hr>
       </div>

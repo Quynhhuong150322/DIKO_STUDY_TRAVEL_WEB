@@ -325,6 +325,33 @@ export const ListImage = [
         img: Img6,
     },
 ]
+
+export const ImgAboutUsList = [
+    {
+        id: 1,
+        img: Img5,
+    },
+    {
+        id: 2,
+        img: Img1,
+    },
+    {
+        id: 3,
+        img: Img5,
+    },
+    {
+        id: 4,
+        img: Img6,
+    },
+    {
+        id: 5,
+        img: Img3,
+    },
+    {
+        id: 6,
+        img: Img6,
+    },
+]
 export const ListCard = [
     {
         id: 1,
@@ -428,6 +455,27 @@ export const ListCard = [
         id: 12,
         img: Img3,
         location: "Teneriffa",
+        side: "SIDE",
+        time: "Wed 25 Jan-Fri 27 Jan",
+        title: "A tour of the city and its surroundings led by a professional guide ..."
+
+    },
+]
+
+// About Us
+export const AboutUsCard = [
+    {
+        id: 1,
+        img: Img1,
+        location: "Berlin",
+        side: "SIDE",
+        time: "Wed 25 Jan-Fri 27 Jan",
+        title: "A tour of the city and its surroundings led by a professional guide ..."
+    },
+    {
+        id: 2,
+        img: Img3,
+        location: "Paris",
         side: "SIDE",
         time: "Wed 25 Jan-Fri 27 Jan",
         title: "A tour of the city and its surroundings led by a professional guide ..."

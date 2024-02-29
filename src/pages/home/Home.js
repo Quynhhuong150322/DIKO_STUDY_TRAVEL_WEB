@@ -1,6 +1,6 @@
 import React from "react";
 import FooterImgage from "../../assets/images/LangdingPage/Footer.jpeg";
-import { ListMenu, ListImage, ListCard, AppList } from "../../dummyData";
+import { ListMenu, ListImage, ListCard } from "../../dummyData";
 import Slider from "../../components/Slider";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
@@ -55,18 +55,19 @@ const Home = () => {
         </div>
         {/* image  */}
         <div>
-          <div className=" ">
+          <div className="">
             <Gallery images={images}
             rowHeight={270}
-            className='ReactGridGallery_tile-icon-bar'/>
-            <Link to="/">
-              <div className="flex justify-center items-center gap-3 bg-[#0C0C0CB2] w-44 h-10 border rounded absolute bottom-8 left-3 z-40 hover:scale-105 transition-all cursor-pointer">
-                <p className="bg-transparent text-base font-normal text-white">
-                  Deals Discover
-                </p>
-                <FaLongArrowAltRight className="bg-transparent text-base font-normal text-white" />
-              </div>
-            </Link>
+            className='ReactGridGallery_tile-icon-bar'>
+              <Link to="/">
+                <div className="flex justify-center items-center gap-3 bg-[#0C0C0CB2] w-44 h-10 border rounded absolute bottom-8 left-3 z-40 hover:scale-105 transition-all cursor-pointer">
+                  <p className="bg-transparent text-base font-normal text-white">
+                    Deals Discover
+                  </p>
+                  <FaLongArrowAltRight className="bg-transparent text-base font-normal text-white" />
+                </div>
+              </Link>
+            </Gallery>
           </div>
         </div>
       </div>
@@ -89,7 +90,7 @@ const Home = () => {
                 </div>
                 <img
                   src={data.img}
-                  // src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYWNofGVufDB8fDB8fHww"
+              
                   alt=""
                   className=" h-[203px] w-full object-cover rounded-sm"
                 ></img>
@@ -183,45 +184,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Go Further With The EasySet24 App */}
-      <div className="max-container flex items-center justify-between py-7">
-        <div className="basis-7/12 flex flex-col gap-1">
-          <h2 className="font-bold text-primary text-xl">
-            Go Further With The EasySet24 App
-          </h2>
-          <p className="text-ba ">
-            Enjoy savings on chosen hotels and flights when you book through the
-            EasySet24 website. Additionally, earn One Key Cash for every booking
-            made through the app.
-          </p>
-          <p className="text-ba text-black/50">Secured By Europe GTP</p>
-        </div>
-        {/* APP  */}
-        <div className="">
-          <div className="flex flex-col gap-6">
-            {AppList.map((data) => (
-              <div className="flex flex-row gap-6 bg-transparent">
-                <div className="flex flex-row basis-5/6 gap-2 items-center justify-center text-white bg-black rounded-lg p-1">
-                  <data.icon className="text-2xl bg-transparent" />
-                  <div className="text-sm bg-transparent flex justify-center items-center flex-col">
-                    <div className="bg-transparent flex justify-center py-1">
-                      {data.title1}
-                    </div>
-                    <p className="text-ba font-bold bg-transparent">
-                      {data.title2}
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={data.QR}
-                  alt=""
-                  className="bg-transparent object-contain"
-                ></img>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 };
