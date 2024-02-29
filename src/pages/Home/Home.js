@@ -50,10 +50,10 @@ const Home = () => {
             {ListImage.map((data) => (
               <div className="relative">
                 <img
-                  // src={data.img}
-                  src="https://plus.unsplash.com/premium_photo-1663119029722-0da758fa1181?q=80&w=2093&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={data.img}
+                  // src="https://plus.unsplash.com/premium_photo-1663119029722-0da758fa1181?q=80&w=2093&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
-                  className={`w-full h-72 object-contain `}
+                  className={`w-full h-full object-cover object-center `}
                 />
                 <Link to="/">
                   <div className="flex justify-center items-center gap-3 bg-[#0C0C0CB2] w-44 h-10 border rounded absolute bottom-8 left-3 z-40 hover:scale-105 transition-all cursor-pointer">
@@ -86,8 +86,8 @@ const Home = () => {
                   <GrFavorite className="bg-transparent w-5 h-5  text-white  " />
                 </div>
                 <img
-                  // src={data.img}
-                  src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYWNofGVufDB8fDB8fHww"
+                  src={data.img}
+                  // src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYWNofGVufDB8fDB8fHww"
                   alt=""
                   className=" h-[203px] w-full object-cover rounded-sm"
                 ></img>
@@ -123,7 +123,7 @@ const Home = () => {
       <div className="max-container py-20">
         <div className="flex flex-col gap-4 py-6">
           <h2 className="text-2xl font-bold">
-            Compare The Highest Reviewed Past Offers{" "}
+            Compare The Highest Reviewed Past Offers
           </h2>
           <p>Browse By Type</p>
         </div>
@@ -135,8 +135,8 @@ const Home = () => {
                   <GrFavorite className="bg-transparent w-5 h-5  text-white  " />
                 </div>
                 <img
-                  // src={data.img}
-                  src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={data.img}
+                  // src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                   className="h-[203px] w-full object-cover rounded-sm"
                 ></img>
@@ -165,46 +165,19 @@ const Home = () => {
         </div>
       </div>
       {/* Banner Footer  */}
-      {/* <div className="bg-transparent bg--slider__img" style={FooterImg}>
+      <div className="bg-transparent bg--slider__img" style={FooterImg}>
         <div className="bg-transparent flex flex-col gap-28 py-10">
           <div className="bg-transparent font-bold text-white px-20">
             <h1 className="bg-transparent text-3xl">Get Inspirations For Your Next Trip</h1>
-            <p className="bg-transparent text-xl">
+            <p className="bg-transparent text-xl text-white">
               Read About Wonderful Adventure We Love Most
             </p>
           </div>
           <div className="bg-transparent text-white px-20 text-right ">
-            <h1 className="bg-transparent font-bold text-3xl ">
+            <h1 className="bg-transparent font-bold text-3xl text-white">
               Difficult Roads Lead To Beautiful Destination .
             </h1>
             <p className="bg-transparent text-x">Read More</p>
-          </div>
-        </div>
-      </div> */}
-      <div className="w-full">
-        <div className="">
-          <div className="max-container relative bg-transparent left-0 z-50 top-48">
-            <h1 className="bg-transparent text-white text-3xl font-bold">
-              Get Inspirations For Your Next Trip
-            </h1>
-            <p className="bg-transparent text-xl font-bold text-white">
-              Read About Wonderful Adventure We Love Most
-            </p>
-          </div>
-          <div className="bg--slider__img">
-            <img
-              src={FooterImgage}
-              alt="Slider"
-              className="w-full max-h-[511px] object-cover"
-            />
-          </div>
-          <div className="max-container relative bg-transparent z-50 top-[-200px] right-[-370px] w-[32%]">
-            <h1 className="bg-transparent text-white text-4xl font-bold">
-              GDifficult Roads Lead To Beautiful Destination .
-            </h1>
-            <p className="bg-transparent text-lg font-normal text-white absolute right-10">
-              {/* Read more */}
-            </p>
           </div>
         </div>
       </div>
