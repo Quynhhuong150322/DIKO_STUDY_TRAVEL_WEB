@@ -77,4 +77,7 @@
     top: 0;
     width: auto;
   }
+  .ReactGridGallery_tile-icon-bar {
+    display: none !important;
+  }
 }

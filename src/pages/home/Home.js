@@ -1,14 +1,16 @@
 import React from "react";
 import FooterImgage from "../../assets/images/LangdingPage/Footer.jpeg";
-import { ListMenu, ListImage, ListCard } from "../../dummyData";
+import { ListMenu, ListImage, ListCard, AppList } from "../../dummyData";
 import Slider from "../../components/Slider";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
 import { FaRegStar } from "react-icons/fa";
-import { AppList } from "../../dummyData";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Gallery } from "react-grid-gallery";
+
+
 const FooterImg = {
-  backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(169,169,169, 0.7)), url(${FooterImgage})`,
+  backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(169,169,169, 0.2)), url(${FooterImgage})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -17,6 +19,13 @@ const FooterImg = {
 };
 
 const Home = () => {
+  const images = ListImage.map((data) => ({
+    src: data.img,
+    thumbnail: data.img,
+    // thumbnailWidth: 320,
+    // thumbnailHeight: 250,
+  }));
+
   return (
     <div>
       {/* Discover Trip  */}
@@ -46,25 +55,18 @@ const Home = () => {
         </div>
         {/* image  */}
         <div>
-          <div className="grid grid-cols-3 gap-2 ">
-            {ListImage.map((data) => (
-              <div className="relative">
-                <img
-                  src={data.img}
-                  // src="https://plus.unsplash.com/premium_photo-1663119029722-0da758fa1181?q=80&w=2093&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  className={`w-full h-full object-cover object-center `}
-                />
-                <Link to="/">
-                  <div className="flex justify-center items-center gap-3 bg-[#0C0C0CB2] w-44 h-10 border rounded absolute bottom-8 left-3 z-40 hover:scale-105 transition-all cursor-pointer">
-                    <p className="bg-transparent text-base font-normal text-white">
-                      Deals Discover
-                    </p>
-                    <FaLongArrowAltRight className="bg-transparent text-base font-normal text-white" />
-                  </div>
-                </Link>
+          <div className=" ">
+            <Gallery images={images}
+            rowHeight={270}
+            className='ReactGridGallery_tile-icon-bar'/>
+            <Link to="/">
+              <div className="flex justify-center items-center gap-3 bg-[#0C0C0CB2] w-44 h-10 border rounded absolute bottom-8 left-3 z-40 hover:scale-105 transition-all cursor-pointer">
+                <p className="bg-transparent text-base font-normal text-white">
+                  Deals Discover
+                </p>
+                <FaLongArrowAltRight className="bg-transparent text-base font-normal text-white" />
               </div>
-            ))}
+            </Link>
           </div>
         </div>
       </div>
