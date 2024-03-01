@@ -5,14 +5,15 @@ import { SlArrowRight } from "react-icons/sl";
 import {ImgAboutUsList, AboutUsCard} from '../../dummyData';
 import { Gallery } from "react-grid-gallery";
 import FooterImage from '../../assets/images/AboutUs/FooterAboutUs.jpg'
+import Map from '../../components/Map';
 
 
 const HeaderImg = {
-  backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(169,169,169, 0.2)), url(${HeaderImage})`,
+  backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(169,169,169, 0.8)), url(${HeaderImage})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  height: "441px",
+  height: "664px",
   width: "100%",
 };
 const FooterImg = {
@@ -50,25 +51,30 @@ const AboutUs = () => {
           </div>
         </div>
         {/* Exclusive Hotel Search! */}
-        <div className='bg-transparent' style={HeaderImg}>
-          <div className='bg-transparent font-bold text-white px-20 flex flex-col gap-5 justify-center items-center py-[128px]'>
-            <h1 className='bg-transparent text-black font-bold text-3xl '>
-              Why Choose Us?
-            </h1>
-            <Link to="/#">
-              <button className=' rounded w-[200px] h-[32px] text-white text-base font-medium bg-primary '>
-                <div className='flex bg-transparent justify-center gap-4 items-center'>
-                  <p className='bg-transparent'>Explore More</p>
-                  <SlArrowRight className='bg-transparent'/>
-                </div>
-              </button>
-            </Link>
-            <h1 className='bg-transparent text-[64px] font-normal py-8 '>
-              Exclusive Hotel Search!
-            </h1>
+        <div>
+          <div className='bg-transparent' style={HeaderImg}>
+            <div className='bg-transparent font-bold text-white px-20 flex flex-col gap-5 justify-center items-center py-[128px]'>
+              <h1 className='bg-transparent text-black font-bold text-3xl '>
+                Why Choose Us?
+              </h1>
+              <Link to="/#">
+                <button className=' rounded w-[200px] h-[32px] text-white text-base font-medium bg-primary '>
+                  <div className='flex bg-transparent justify-center gap-4 items-center'>
+                    <p className='bg-transparent'>Explore More</p>
+                    <SlArrowRight className='bg-transparent'/>
+                  </div>
+                </button>
+              </Link>
+              <h1 className='bg-transparent text-[64px] font-normal pt-40'>
+                Exclusive Hotel Search!
+              </h1>
+            </div>
+            <div className=''>
+        
+            </div>
           </div>
           <div className=''>
-
+            <Map/>
           </div>
         </div>
         {/* Special Offers */}

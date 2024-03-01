@@ -29,6 +29,13 @@ import Img7 from "./assets/images/LangdingPage/ExploreStays/Image1.jpg"
 import Img8 from "./assets/images/LangdingPage/ExploreStays/Image2.jpg"
 import Img9 from "./assets/images/LangdingPage/ExploreStays/Image3.jpg"
 
+//About Us
+import imgMap1 from './assets/images/AboutUs/MapImage/image1.png';
+import imgMap2 from './assets/images/AboutUs/MapImage/image2.png';
+import imgMap3 from './assets/images/AboutUs/MapImage/image3.png';
+import imgMap4 from './assets/images/AboutUs/MapImage/image4.png';
+import imgMap5 from './assets/images/AboutUs/MapImage/image5.png';
+
 export const MenuData = [
     {
         id: 1,
@@ -481,4 +488,37 @@ export const AboutUsCard = [
         title: "A tour of the city and its surroundings led by a professional guide ..."
 
     },
+]
+
+export const CardMapList = [
+    {
+        id: 1,
+        img: imgMap1,
+        location: 'Belgium',
+        title: 'Bruxelles Gare du Midi'
+    },
+    {
+        id: 2,
+        img: imgMap2,
+        location: 'Amsterdam',
+        title: 'Bunk'
+    },
+    {
+        id: 3,
+        img: imgMap3,
+        location: 'New Jersey',
+        title: 'Windsor'
+    },
+    {
+        id: 4,
+        img: imgMap4,
+        location: 'Nepal',
+        title: 'Hyatt Regency K'
+    },
+    {
+        id: 5,
+        img: imgMap5,
+        location: 'Gothenburg',
+        title: 'First Hotel G'
+    }
 ]
