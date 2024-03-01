@@ -9,7 +9,7 @@ import { BiChild } from 'react-icons/bi';
 import { FaPerson } from 'react-icons/fa6';
 import { MdOutlineBedroomParent } from 'react-icons/md';
 import DatePicker from 'react-datepicker';
-const Search = () => {
+const SearchSecond = () => {
     const [showPerson, setShowPerson] = useState(true);
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
@@ -195,4 +195,4 @@ const Search = () => {
     );
 };
 
-export default Search;
+export default SearchSecond;
